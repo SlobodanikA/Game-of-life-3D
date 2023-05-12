@@ -1,44 +1,64 @@
+using System.Collections;
 using UnityEngine;
 
 public class ObjectMovement : MonoBehaviour
 {
-    public Vector3 targetPosition; // Координаты, к которым перемещается объект
-    public float speed = 10f; // Скорость перемещения
+    public Vector3 targetPosition; // Координати, куди переміщується об'єкт
+    public float speed = 10f; // Швидкість переміщення
+    public float rotationTime = 0.5f; // Час на поворот (у секундах)
 
-    private bool isMoving = false; // Флаг, указывающий, перемещается ли объект в данный момент
+    private bool isMoving = false; // Прапорець, що вказує, чи переміщується об'єкт в даний момент
 
-    void Update()
+    private IEnumerator StartMovement()
     {
-        if (isMoving)
+        // Визначаємо вектор напрямку до цільової позиції
+        Vector3 direction = (targetPosition - transform.position).normalized;
+
+        // Поворот об'єкта у напрямку руху по осі Y
+        Quaternion targetRotation = Quaternion.Euler(0f, Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg, 0f);
+
+        // Плавний поворот до цільового повороту
+        float elapsedTime = 0f;
+        Quaternion startRotation = transform.rotation;
+
+        while (elapsedTime < rotationTime)
         {
-            // Вычисляем вектор направления к целевой позиции
-            Vector3 direction = (targetPosition - transform.position).normalized;
-
-            // Вычисляем расстояние между текущей позицией и целевой позицией
-            float distance = Vector3.Distance(transform.position, targetPosition);
-
-            // Если объект еще не достиг целевой позиции, перемещаем его
-            if (distance > 0.1f)
-            {
-                transform.position += direction * speed * Time.deltaTime;
-            }
-            else
-            {
-                // Если объект достиг целевой позиции, останавливаем его перемещение
-                isMoving = false;
-            }
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / rotationTime);
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, t);
+            yield return null;
         }
+
+        // Затримка на пів секунди
+        yield return new WaitForSeconds(0.5f);
+
+        // Визначаємо відстань між поточною позицією та цільовою позицією
+        float distance = Vector3.Distance(transform.position, targetPosition);
+
+        // Переміщення об'єкта до цільової позиції
+        while (distance > 0.1f)
+        {
+            // Повторно визначаємо напрямок перед кожним кадром
+            direction = (targetPosition - transform.position).normalized;
+            transform.position += direction * speed * Time.deltaTime;
+            distance = Vector3.Distance(transform.position, targetPosition);
+            yield return null;
+        }
+
+        // Завершення переміщення
+        isMoving = false;
     }
 
     public void MoveTo(Vector3 position)
     {
         targetPosition = position;
         isMoving = true;
+        StartCoroutine(StartMovement());
     }
+
     public void MoveTo(Vector3 position, float newSpeed)
     {
         speed = newSpeed;
-        targetPosition = position;
-        isMoving = true;
+        MoveTo(position);
     }
 }

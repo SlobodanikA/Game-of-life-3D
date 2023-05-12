@@ -27,7 +27,7 @@ public class Predator : Prey
         else{
             toCoord = getPreyNeighborCoord();
             if(toCoord != this.offset){
-                GameObject.Destroy(Viewer.cells[toCoord.getY(),toCoord.getX()].model);
+                Viewer.cells[toCoord.getY(),toCoord.getX()].model.GetComponent<PreyDestroy>().DestroyObjectDelayed();
                 Debug.Log(toCoord.getY() + " " + toCoord.getX() + "Eaten");
                 Viewer.setNumPrey(Viewer.getNumPrey()-1);
                 timeToFeed = TimeToFeed;

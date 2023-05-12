@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CameraMove" Collapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAAAAAAAAgAAAAACAAAACAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Assets\Scripts\CameraMove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cell">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="CONSTANTA" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="3.253" />
+        <Point X="7.875" Y="3.253" />
+        <Point X="7.875" Y="3.25" />
+        <Point X="7" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAGAAAAQDACAAAAAABA4AAIAEAAAgAAAAAAABAAIgAA=</HashCode>
+      <FileName>Assets\Scripts\Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CONSTANTA">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAQAEEAAoDAAQEAgAAAAQASAgAQAKAAQBA=</HashCode>
+      <FileName>Assets\Scripts\CONSTANTS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coordinate" Collapsed="true">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACEAAAAAAAAAAQAAAAAAAAAAABgAGAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Coordinate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmptyCell">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EmptyCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectMovement" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAAAAAAAAAAAAAAAIAQAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ObjectMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obstacle">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Obstacle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ocean">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RAAQANAEBAgCABAAIIEQIAAGQAEIAAAIAEEADFABAhA=</HashCode>
+      <FileName>Assets\Scripts\Ocean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OceanScripts" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAAAAAAQAABA=</HashCode>
+      <FileName>Assets\Scripts\OceanScripts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseGame" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\PauseGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Predator">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Prey" FixedFromPoint="true">
+      <Path>
+        <Point X="2.75" Y="3.188" />
+        <Point X="2" Y="3.188" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Predator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prey">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Cell" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="3.312" />
+        <Point X="4.875" Y="3.312" />
+        <Point X="4.875" Y="3.312" />
+        <Point X="4.25" Y="3.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Prey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessOnClick" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ProcessOnClick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpawnOnClick" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SpawnOnClick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

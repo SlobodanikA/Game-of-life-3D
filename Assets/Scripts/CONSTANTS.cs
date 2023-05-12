@@ -1,16 +1,16 @@
 
 public abstract class CONSTANTA {
-public  const int MaxRows = 25;
+public  const int MaxRows = 40;
 public  const int MinRows = 10;
-public  const int MaxCols = 70;
+public  const int MaxCols = 40;
 public  const int MinCols = 10;
 public  const int MaxIterations = 10000;
 public  const int MinIterations = 10;
 public  const int MaxNumObstacles = MaxRows*MaxCols;
 public  const int MinNumObstacles = 0;
-public  const int DefaultNumObstacles = 75;
+public  const int DefaultNumObstacles = 0;
 public  const int DefaultNumPredators = 20;
-public  const int DefaultNumPrey = 150;
+public  const int DefaultNumPrey =70;
 public  const int DefaultNumIterations = 1000;
 public  const string DefaultImage = "~";
 public  const string DefaultPreyImage = "F";
