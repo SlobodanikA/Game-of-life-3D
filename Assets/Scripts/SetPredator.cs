@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using static GameData;
 
-public class SliderValueSetter : MonoBehaviour
+public class SetPredator : MonoBehaviour
 {
     public Slider slider;
 
@@ -10,9 +10,9 @@ public class SliderValueSetter : MonoBehaviour
     {
         if (slider != null)
         {
-            slider.value = CurrentPrey;
-            slider.minValue = MinNumPrey;
-            slider.maxValue = MaxNumPrey;
+            slider.value = CurrentPredator;
+            slider.minValue = MinNumPredator;
+            slider.maxValue = MaxNumPredator;
         }
         else
         {
