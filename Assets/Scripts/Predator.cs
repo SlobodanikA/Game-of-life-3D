@@ -1,4 +1,6 @@
 using UnityEngine;
+using static GameData;
+
 public class Predator : Prey 
 {
     protected int timeToFeed;

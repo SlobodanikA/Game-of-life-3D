@@ -1,3 +1,5 @@
+using static GameData;
+
 public class Obstacle : Cell 
 {
     public Obstacle(Coordinate aCoord, Ocean l) : base(aCoord, l){

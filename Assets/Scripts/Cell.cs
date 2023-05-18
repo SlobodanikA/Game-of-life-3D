@@ -2,8 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GameData;
 
-public abstract class Cell : CONSTANTA
+public abstract class Cell
 {
     public Ocean Viewer = null;
     public Coordinate offset;

@@ -1,5 +1,7 @@
 using UnityEngine;
-public class Ocean : CONSTANTA
+using static GameData;
+
+public class Ocean 
 {
     public int numIterations;
     public int numRows;
@@ -9,20 +11,20 @@ public class Ocean : CONSTANTA
     public int numPredators;
     public int numObstacles;
     public GameObject[] objs;
-    public Cell [,] cells = new Cell[MaxRows,MaxCols];
+    public Cell [,] cells = new Cell[CurrentRows,CurrentCols];
    
-    public bool [,] wasInProcess = new bool[MaxRows,MaxCols];
+    public bool [,] wasInProcess = new bool[CurrentRows, CurrentCols];
     public Ocean(GameObject [] obj) {
         objs = obj;
         initialize();
     }
     public void initialize() {
-        numRows = MaxRows;
-        numCols = MaxCols;
+        numRows = CurrentRows;
+        numCols = CurrentCols;
         size = numCols * numRows;
-        numObstacles = DefaultNumObstacles;
-        numPredators = DefaultNumPredators;
-        numPrey = DefaultNumPrey;
+        numObstacles = CurrentObstacles;
+        numPredators = CurrentPredator;
+        numPrey = CurrentPrey;
         initCells();
     }
     private void initCells(){

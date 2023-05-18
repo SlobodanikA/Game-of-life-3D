@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
+using static GameData;
 
 public class OceanScripts : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class OceanScripts : MonoBehaviour
             for (int row = 0; row < myOcean.numRows; row++) {
                 for (int col = 0; col < myOcean.numCols; col++) {
                   
-                    if (!myOcean.wasInProcess[row,col]&& myOcean.cells[row, col].getImage() == CONSTANTA.DefaultPreyImage) {
+                    if (!myOcean.wasInProcess[row,col]&& myOcean.cells[row, col].getImage() == DefaultPreyImage) {
                         
                         Cell workCell = myOcean.cells[row,col];
                         myOcean.cells[row,col].process();
