@@ -3,19 +3,19 @@ public static class GameData
 {
     public static int MaxRows = 100;
     public static int MinRows = 10;
-    public static int DefaultRows = 50;
-    public static int CurrentRows = 50;
+    public static int DefaultRows = 15;
+    public static int CurrentRows = 15;
     public static void SetRows(int i) { CurrentRows = i;  updateMaxValues(); }
 
     public static int MaxCols = 100;
     public static int MinCols = 10;
-    public static int DefaultCols = 50;
-    public static int CurrentCols = 50;
+    public static int DefaultCols = 15;
+    public static int CurrentCols = 15;
     public static void SetCols(int i) { CurrentCols = i; updateMaxValues(); }
 
     public static int MaxIterations = 10000;
     public static int MinIterations = 10;
-    public static int DefaultIterations = 50;
+    public static int DefaultIterations = 100;
     public static int CurrentIterations = 100;
     public static void SetIterations(int i) { CurrentIterations = i; updateMaxValues(); }
 
@@ -26,17 +26,17 @@ public static class GameData
     public static int CurrentObstacles = 0;
     public static void SetObstacles(int i) { CurrentObstacles = i; updateMaxValues(); }
 
-    public static int MaxNumPrey = CurrentCols * CurrentRows - CurrentObstacles - CurrentPredator;
+    public static int MaxNumPrey = CurrentCols * CurrentRows/2;
     public static int MinNumPrey = 6;
-    public static int DefaultPrey = 100;
-    public static int CurrentPrey = 100;
+    public static int DefaultPrey = 50;
+    public static int CurrentPrey = 50;
     public static void SetPrey(int i) { CurrentPrey = i; updateMaxValues(); }
 
-    public static int MaxNumPredator = CurrentCols * CurrentRows - MinNumPrey;
+    public static int MaxNumPredator = CurrentCols * CurrentRows/2;
     public static int RealMaxNumPredator = CurrentCols * CurrentRows - CurrentObstacles - CurrentPrey;
     public static int MinNumPredator = 2;
-    public static int DefaultPredator = 20;
-    public static int CurrentPredator = 20;
+    public static int DefaultPredator = 10;
+    public static int CurrentPredator = 10;
     public static void SetPredator(int i) { CurrentPredator = i; updateMaxValues(); }
 
     public  static string DefaultImage = "~";

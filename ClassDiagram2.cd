@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CameraMove" Collapsed="true">
+    <Position X="15.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAAAAAAAAgAAAAACAAAACAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Assets\Scripts\CameraMove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cell">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAGAAAAQDACAAAAAABA4AAIAEAAAgAAAAAAABAAIgAA=</HashCode>
+      <FileName>Assets\Scripts\Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coordinate">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACEAAAAAAAAAAQAAAAAAAAAAABgAGAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Coordinate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DisableSettingsButton" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABEgAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DisableSettingsButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmptyCell">
+    <Position X="5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EmptyCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameData">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EIAKAgQACAC4IEXAgoqAJAEIgAgAAQASAgASAIKAAhA=</HashCode>
+      <FileName>Assets\Scripts\GameData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectMovement" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAAAAgAAAAAAIAQAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ObjectMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obstacle">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Obstacle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ocean">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RAAQANAEBAgCABAAIIEQIAAGQAEIAAAIAEEADFABAhA=</HashCode>
+      <FileName>Assets\Scripts\Ocean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OceanScripts" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAAAAAAAAAAAAAABAAAEAAAAAAAAAAQAABA=</HashCode>
+      <FileName>Assets\Scripts\OceanScripts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseGame" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\PauseGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Predator">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Predator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prey">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Prey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PreyDestroy" Collapsed="true">
+    <Position X="13.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQCAAAA=</HashCode>
+      <FileName>Assets\Scripts\PreyDestroy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessOnClick" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ProcessOnClick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SetPredator" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SetPredator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetPrey" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SetPrey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpawnOnClick" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SpawnOnClick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="StartSimulation" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\StartSimulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

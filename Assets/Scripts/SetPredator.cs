@@ -8,11 +8,12 @@ public class SetPredator : MonoBehaviour
 
     private void Start()
     {
+       
         if (slider != null)
         {
-            slider.value = CurrentPredator;
             slider.minValue = MinNumPredator;
             slider.maxValue = MaxNumPredator;
+            slider.value = CurrentPredator;
         }
         else
         {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
+using UnityEngine.SceneManagement;
 using static GameData;
 
 public class OceanScripts : MonoBehaviour
@@ -57,8 +58,8 @@ public class OceanScripts : MonoBehaviour
             }
     }
         Debug.Log("Гра завершена");
-        yield return new WaitForSeconds(10);
-        Application.Quit();
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("MainMenu");
     }
 
 
